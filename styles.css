@@ -300,7 +300,7 @@ button{
   height: 800px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   #introducción {
     color: #202020;
   }
@@ -338,7 +338,7 @@ button{
   }
 }
 
-@media (min-width: 700px) and (max-width: 1064px){
+@media (min-width: 768px) and (max-width: 1064px){
   #aver{
     height: 500px;
   }
