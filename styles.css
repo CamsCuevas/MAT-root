@@ -82,12 +82,12 @@ body{
 /* navbar */
 
 header{
-    display: flex;
-    flex-wrap: wrap;
-    color: #F5F5F5;
-    position: relative;
-    width: 100%;
-    overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  color: #F5F5F5;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 #logo{
@@ -150,6 +150,7 @@ button{
 
 .navbar{
     display: flex;
+    color:#f5f5f5;
     margin-right: 25px;
 }
 
@@ -193,7 +194,7 @@ button{
 }
 
 .bi-quote{
-    color: #C7FFE2;
+    color: #595487;
     font-size: 70px;
 }
 
@@ -214,7 +215,7 @@ button{
     padding-left: 10%;
     padding-right: 10%;
     text-align: center;
-    color: #666666;
+    color: #456f5a;
 }
 
 #ventajas{
@@ -235,12 +236,23 @@ button{
     color: #666666;
 }
 
+
+/* animations */
+
 @keyframes fade-fondo{
   to{opacity: 0; scale: 2;}
 }
 
 @keyframes fade-out{
   to{opacity: 0;}
+}
+
+@-webkit-keyframes fade-fondo {
+  to{opacity: 0; scale: 2;}
+}
+
+@-webkit-keyframes fade-out {
+  to{opacity: 0; scale: 2;}
 }
 
 #fondo{
@@ -251,17 +263,21 @@ button{
   opacity: 1;
   width: 100%;
   object-fit: cover;
-  animation: fade-fondo;
+  animation-name: fade-fondo;
   animation-timeline: view();
   animation-range: exit;
+  -webkit-animation-name: fade-fondo;
 }
 
 .class{
   transform-origin: top;
-  animation: fade-out linear forwards;
+  animation-name: fade-out linear forwards;
   animation-timeline: view();
   animation-range: exit;
+  -webkit-animation-name: fade-fondo;
 }
+
+/* otras cosas */
 
 .row{
   width: 100vw;
@@ -273,6 +289,10 @@ button{
   align-content: stretch;
   background-color: #C7FFE2;
   border-radius: 20px;
+  border-style: solid;
+  border-color: #65ac88;
+  border-width: 4px;
+  box-shadow: 0px 0px 30px 1px #e6e7e8;
 }
 
 .diferenciadores{
@@ -299,6 +319,8 @@ button{
 #aver{
   height: 800px;
 }
+
+/* media queries */
 
 @media (max-width: 768px) {
   #introducción {
@@ -351,4 +373,36 @@ button{
   #actividades{
     padding-top: 3vh;
   }
+}
+
+
+#pie{
+  background-color: #595487;
+  color:#F5F5F5;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 51px;
+  padding-right: 51px;
+}
+
+#forms{
+  margin-left: 0px;
+  background-color: #595487;
+}
+
+footer{
+  background-color: #595487;
+  color:#F5F5F5;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 51px;
+  padding-right: 51px;
+}
+
+#separador_footer{
+  height: 50px;
+}
+
+a{
+  text-decoration: none;
 }
